@@ -8,6 +8,13 @@ class TarefaController{
         $this->tarefaModel = new Tarefa();
     }
 
+    ##listar
+
+    public function index(){
+        $tarefas = $this->tarefaModel->listar();
+        include __DIR__ . '/../views/listar.php';
+    }
+
     ##Criar
 
     public function criar(){

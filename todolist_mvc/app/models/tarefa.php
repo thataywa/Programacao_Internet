@@ -3,7 +3,7 @@ require_once __DIR__ . '/../config/database.php';
 
 
 class Tarefa{
-    PRIVATE $conn;
+    private $conn;
 
     public function __construct(){
         $db = new Database();
@@ -20,7 +20,8 @@ class Tarefa{
                 $tarefas[] = $row;
         }
     }
-    return $tarefas;}
+        return $tarefas;
+    }
 
     ##criar
     public function criar($descricao){
