@@ -8,11 +8,11 @@ class Database{
 
     public $conn;
 
-    public function conectar(): mysqli{
+    public function conectar(){
         $this->conn = new mysqli($this->host, $this->usuario, $this->senha, $this->banco);
 
         if($this->conn->connect_error){
-            die("Deu erro ai boy: " .$this->conn->connect_error);
+            die("Deu erro: " .$this->conn->connect_error);
         }
 
 
