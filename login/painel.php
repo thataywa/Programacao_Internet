@@ -10,6 +10,9 @@ include("protect.php");
     <title>Document</title>
 </head>
 <body>
-    bem vindo ao painel, <?php echo $_SESSION['nome']?>
+    Bem vindo ao painel, <?php echo $_SESSION['nome']?>
+    <p>
+        <a href="logout.php">Sair</a>
+    </p>
 </body>
 </html>
