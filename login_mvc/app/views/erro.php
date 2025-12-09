@@ -7,7 +7,7 @@
 <body>
     <h2><?php echo $erro; ?></h2>
 
-    <p><a href="index.php">Voltar</a></p>
+    <p><a href="login.php"><button>Voltar</button></a></p>
 </body>
 </html>
 
